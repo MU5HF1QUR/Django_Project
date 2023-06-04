@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(27, 125, 167);
+}
+
+.tprop{
+    text-align: justify;
+    word-spacing: 5px;
+    line-height: 1;
+    text-shadow: 3px 5px 4px rgba(221, 15, 159, 0.705);
+}
+
+.onePiece{
+    margin: 5px;
+    border: 1px solid #ccc;
+    /*float: left;*/
+    width: 180px;
+}
+
+.onePiece:hover{
+    border: 1px solid #972d2d;
+}
+
+.onePiece img{
+    width: justify;
+    height: auto;
+}

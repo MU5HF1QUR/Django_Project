@@ -1,0 +1,23 @@
+body{
+    background-color: aquamarine;
+}
+form {
+    margin: 0 auto;
+    width:250px;
+    
+    }
+
+label {
+    float: left;
+    font-size: 16px;
+      display:block; width:150px;
+    }
+input {
+    padding: 5px;
+    margin-left: 10px;
+    display:block; width:200px;float: left;
+    }
+
+.form_cont{
+    margin-top: 200px;
+}

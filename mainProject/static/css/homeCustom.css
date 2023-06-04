@@ -1,0 +1,19 @@
+.navbar{
+    margin-bottom: 10px;
+}
+
+.container-fluid{
+    margin-bottom: 15px;
+}
+
+.container{
+    margin-bottom: 15px;
+}
+
+.container text-center{
+    margin: 10px;
+}
+
+.midTitle{
+    text-shadow: 5px 4px 3px rgb(184, 187, 187);
+}

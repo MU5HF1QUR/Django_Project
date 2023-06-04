@@ -1,0 +1,138 @@
+{% extends 'common_code/base.html' %}
+{% load static %}
+{% block css1 %}
+<link rel="stylesheet" href="{% static 'css/movies.css' %}">
+{% endblock css1 %}
+{% block title %}Movies {% endblock title %}
+
+{% block content1 %}
+
+<div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="card h-100">
+                <div class="img-wrapper"><img src="{% static 'images/movies/akira.jpg' %}" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                    <h5 class="card-title">Akira</h5>
+                    <p class="card-text">In a post-apocalyptic Tokyo, psychic powers lead to chaos and a clash between friends.
+                    </p>
+                    <a href="https://myanimelist.net/anime/47/Akira" target="_blank" class="btn btn-primary">More on MAL</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card h-100">
+                <div class="img-wrapper"><img src="{% static 'images/movies/your_name.jpg' %}" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                    <h5 class="card-title">Your Name</h5>
+                    <p class="card-text">Two strangers connected by dreams search for each other in a cosmic tale of love and destiny.</p>
+                    <a href="https://myanimelist.net/anime/32281/Kimi_no_Na_wa" target="_blank" class="btn btn-primary">More on MAL</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card h-100">
+                <div class="img-wrapper"><img src="{% static 'images/movies/spirited.jpg' %}" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                    <h5 class="card-title">Spirited Away</h5>
+                    <p class="card-text">A young girl must navigate a mystical world to save her parents and find her way back home.</p>
+                    <a href="https://myanimelist.net/anime/199/Sen_to_Chihiro_no_Kamikakushi" target="_blank" class="btn btn-primary">More on MAL</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card h-100">
+                <div class="img-wrapper"><img src="{% static 'images/movies/pmon.png' %}" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                    <h5 class="card-title">Princess Mononoke</h5>
+                    <p class="card-text">A warrior becomes entangled in a battle between nature and humans in a visually stunning epic.</p>
+                    <a href="https://myanimelist.net/anime/164/Mononoke_Hime" target="_blank" class="btn btn-primary">More on MAL</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card h-100">
+                <div class="img-wrapper"><img src="{% static 'images/movies/grave.jpg' %}" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                    <h5 class="card-title">Grave of the Fireflies</h5>
+                    <p class="card-text">Siblings struggle to survive the horrors of war in a heartbreaking portrayal of resilience and loss.</p>
+                    <a href="https://myanimelist.net/anime/578/Hotaru_no_Haka" target="_blank" class="btn btn-primary">More on MAL</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card h-100">
+                <div class="img-wrapper"><img src="{% static 'images/movies/ghost.jpg' %}" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                    <h5 class="card-title">Ghost in the Shell</h5>
+                    <p class="card-text">A cyborg cop delves into the nature of consciousness while investigating a dangerous hacker.</p>
+                    <a href="https://myanimelist.net/anime/43/Koukaku_Kidoutai" target="_blank" class="btn btn-primary">More on MAL</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card h-100">
+                <div class="img-wrapper"><img src="{% static 'images/movies/howl.jpg' %}" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                    <h5 class="card-title">Howl's Moving Castle</h5>
+                    <p class="card-text">A young woman cursed with old age seeks the help of a wizard in a whimsical adventure.</p>
+                    <a href="https://myanimelist.net/anime/431/Howl_no_Ugoku_Shiro" target="_blank" class="btn btn-primary">More on MAL</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card h-100">
+                <div class="img-wrapper"><img src="{% static 'images/movies/tale.png' %}" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                    <h5 class="card-title">The Tale of the Princess Kaguya</h5>
+                    <p class="card-text">A foundling girl grows into a captivating princess, navigating societal expectations.</p>
+                    <a href="https://myanimelist.net/anime/16664/Kaguya-hime_no_Monogatari" target="_blank" class="btn btn-primary">More on MAL</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card h-100">
+                <div class="img-wrapper"><img src="{% static 'images/movies/silent.png' %}" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                    <h5 class="card-title">A Silent Voice</h5>
+                    <p class="card-text">A former bully seeks redemption and understanding after reconnecting with a deaf girl he tormented.</p>
+                    <a href="https://myanimelist.net/anime/28851/Koe_no_Katachi" target="_blank" class="btn btn-primary">More on MAL</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+    <!--{{mov}}-->
+
+    <div class="container-fluid" style="margin-bottom: 70px;">
+    <table class="table table-bordered">
+        <tr>
+            
+            <th>Title</th>
+            <th>Describtion</th>
+            <th>Ratings</th>
+        </tr>
+        {% for i in mov %}
+            <tr>
+                
+                <td>{{i.movie_name}}</td>
+                <td>{{i.movie_des}}</td>
+                <td>{{i.movie_rating}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+{% endblock content1 %}
+

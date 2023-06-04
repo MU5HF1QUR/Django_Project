@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>My Website</title>
+</head>
+<body>
+    <h1>APP ONE: </h1>
+    <br>
+    <h2>Variable and filter down below:</h2>
+    <h3>{{f1 | upper}}</h3>
+    <h3>{{f2 | capfirst}}</h3>
+    <h3>{{f3 | lower}}</h3>
+    <h3>{{f4 | length}}</h3>
+    <br>
+    <h2>For Dynamic value and if/else add "/tf" in the url.</h2>
+    <br>
+
+    <h2>Use "/two" in the url to check for loop.</h2>
+    <h2>Use "/three" in the url to check template inheritence.</h2><br>
+
+    <p class="tprop">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+
+    <br><br><br>
+
+    
+    <div class="onePiece">
+        <img src="{% static 'images/dn.jpg' %}" alt="">
+    </div>
+    
+    <div class="onePiece">
+        <img src="{% static 'images/op.jpg' %}" alt="">
+    </div>
+    
+    
+    
+    
+
+</body>
+</html>

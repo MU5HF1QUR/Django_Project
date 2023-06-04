@@ -1,0 +1,27 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/passchange.css' %}">
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<title>PassChange</title>
+<div class="form_cont">
+<form action="" method="POST" novalidate>
+    {% csrf_token %}
+    {% if form.non_field_errors %}
+    {% for error in form.non_field_errors %}
+    <p>{{error}}</p>
+    {% endfor %}
+
+    {% endif %}
+
+
+    {% for fm in form %}
+    {{fm.label_tag}}{{fm}} {{fm.errors|striptags}} <br><br>
+    {% endfor %}
+    <div class="d-grid gap-2 col-12 mx-auto">
+        <input class="btn btn-outline-success" type="submit" value="Save" style="margin-top: 35px;" >
+    </div>
+    
+    <div class="d-grid gap-2 col-12 mx-auto" style="margin-top: 10px;">
+        <a href="{% url 'logout' %}" ><input class="btn btn-outline-success" type="submit" value="Logout" ></a>
+    </div>
+</form>
+</div>
